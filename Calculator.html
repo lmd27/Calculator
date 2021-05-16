@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+ <head>
+  <title> Calculator </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ </head>
+
+   <body style="background-color:#0099ff;">
+
+    <div id = "WebStyle">
+     <p><center> <h1> Welcome to the land of computing </h1> </center></p>
+     <p><center> <h2> 🖩 Online calculator 🖩 </h2> </center></p> <br></br>
+    </div>
+
+      <div id = "inputsAndButtons">
+        <center>
+          <input type="text" placeholder="First number" id="addInputOne"> + <input type="text" placeholder="Second number" id="addInputTwo">
+          <button id = "addButton"> Add </button> <br></br> <br></br>
+          <input type="text" placeholder="First number" id="subtractInputOne"> - <input type="text" placeholder="Second number" id="subtractInputTwo">
+          <button id = "subtractButton"> Subtract </button> <br></br> <br></br>
+          <input type="text" placeholder="First number" id="multiplyInputOne"> x <input type="text" placeholder="Second number" id="multiplyInputTwo">
+          <button id = "multiplyButton"> Multiply </button> <br></br> <br></br>
+          <input type="text" placeholder="First number" id="divideInputOne"> ÷ <input type="text" placeholder="Second number" id="divideInputTwo">
+          <button id = "divideButton"> Divide </button> <br></br> <br></br>
+       </center>
+    </div>
+
+     <script>
+
+ //Here we declare the Add input and button functionality using JQuery:
+       $(document).ready(function(){
+         $("#addButton").click(function(){
+         var addFirstNumber = parseFloat($("#addInputOne").val());
+         var addSecondNumber = parseFloat($("#addInputTwo").val());
+         var addSum = addFirstNumber + addSecondNumber
+         alert(addSum);
+         console.log( "The result is : " + addSum);
+        });
+       });
+
+// Here we declare the Subtract input and button functionality using JQuery:
+$(document).ready(function(){
+  $("#subtractButton").click(function(){
+  var subtractFirstNumber = parseFloat($("#subtractInputOne").val());
+  var subtractSecondNumber = parseFloat($("#subtractInputTwo").val());
+  var subtractResult = subtractFirstNumber - subtractSecondNumber;
+  alert(subtractResult);
+  console.log( "The result is : " + subtractResult);
+ });
+});
+
+
+//Here we declare the Multiplication input and button functionality using JQuery:
+$(document).ready(function(){
+  $("#multiplyButton").click(function(){
+  var multiplyFirstNumber = parseFloat($("#multiplyInputOne").val());
+  var multiplySecondNumber = parseFloat($("#multiplyInputTwo").val());
+  var multiplyResult = multiplyFirstNumber * multiplySecondNumber;
+  alert(multiplyResult);
+  console.log( "The result is : " + multiplyResult);
+ });
+});
+
+
+//Here we declare the Division input and button functionality using JQuery:
+ $(document).ready(function(){
+   $("#divideButton").click(function(){
+   var divideFirstNumber = parseFloat($("#divideInputOne").val());
+   var divideSecondNumber = parseFloat($("#divideInputTwo").val());
+   var divideResult = divideFirstNumber / divideSecondNumber
+   alert(divideResult);
+   console.log( "The result is : " + divideResult);
+  });
+ });
+
+
+
+
+     </script>
+
+
+
+  </body>
+
+
+
+
+</html>
