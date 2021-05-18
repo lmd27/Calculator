@@ -6,6 +6,7 @@ The structure of the project is based in html tags and the functionalities are
 inserted using Javascript , mainly JQuery.
 
 2. How to use ?
+
 The usage of the website is made pretty simple. 
 When a user opens and runs the files there should be
 а monochromatic outlook with 2 input boxes for each 
